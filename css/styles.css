@@ -766,22 +766,49 @@ body {
 }
 
 @media (max-width: 768px) {
-    /* mobile nav */
-    .nav-toggle { display: flex; }
-    .nav-links {
-        position: fixed;
-        top: 64px; left: 0; right: 0;
-        background: rgba(10, 10, 15, 0.97);
+    /* always show navbar background on mobile so logo + hamburger are always visible */
+    .navbar {
+        background: rgba(10, 10, 15, 0.96);
         backdrop-filter: blur(16px);
-        flex-direction: column;
-        padding: 2rem;
-        gap: 1.5rem;
-        border-bottom: 1px solid var(--border);
-        transform: translateY(-110%);
-        transition: transform var(--t-med) var(--ease);
-        z-index: 99;
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom-color: var(--border);
     }
-    .nav-links.open { transform: translateY(0); }
+
+    .nav-toggle { display: flex; }
+
+    /* slide-down from within the navbar — avoids stacking context issues entirely */
+    .nav-links {
+        position: absolute;
+        top: 64px; left: 0; right: 0;
+        background: rgba(10, 10, 15, 0.98);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        flex-direction: column;
+        gap: 0;
+        padding: 0 2rem;
+        max-height: 0;
+        overflow: hidden;
+        border-bottom: 1px solid transparent;
+        transition: max-height var(--t-med) var(--ease),
+                    padding var(--t-med) var(--ease),
+                    border-color var(--t-fast) var(--ease);
+    }
+    .nav-links.open {
+        max-height: 400px;
+        padding: 1.25rem 2rem 1.75rem;
+        border-bottom-color: var(--border);
+    }
+    .nav-links .nav-link,
+    .nav-links .nav-resume {
+        padding: 0.6rem 0;
+        border-bottom: 1px solid var(--border);
+        width: 100%;
+    }
+    .nav-links .nav-resume {
+        border: none;
+        padding-top: 0.75rem;
+        align-self: flex-start;
+    }
 
     .projects-grid { grid-template-columns: 1fr; }
 
