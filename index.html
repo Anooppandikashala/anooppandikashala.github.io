@@ -3,151 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anoop P - Software Developer Portfolio</title>
+    <title>Anoop P — Software Developer</title>
+    <meta name="description" content="Anoop P — Backend C++ Developer, Android Developer, Python Developer based in Kerala, India.">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">AP</span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link active">Home</a>
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">AP</a>
+            <div class="nav-links" id="nav-menu">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#education" class="nav-link">Education</a>
+                <a href="https://drive.google.com/file/d/1A5WLCv1dRfbCwg5Z2orasSvxXIeAhwPP/view?usp=sharing"
+                   class="nav-resume" target="_blank">Resume <i class="fas fa-arrow-up-right-from-square"></i></a>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="hero-particles"></div>
-        </div>
-        <div id="lead">
-            <div id="lead-content">
-                <h1>Anoop P</h1>
-                <h2 >Associate Software Developer</h2>
-                <h3 class="typing-animation">Associate Software Developer</h3>
-                <a href="https://drive.google.com/file/d/1A5WLCv1dRfbCwg5Z2orasSvxXIeAhwPP/view?usp=sharing" class="btn-rounded-white" target="_blank">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Hi there, I'm</p>
+            <h1 class="hero-name">Anoop P<span class="accent-dot">.</span></h1>
+            <div class="hero-role-wrap">
+                <span id="typing-text" class="hero-role"></span><span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-tagline">Backend systems · Mobile apps · Machine learning</p>
+            <div class="hero-cta">
+                <a href="https://drive.google.com/file/d/1A5WLCv1dRfbCwg5Z2orasSvxXIeAhwPP/view?usp=sharing"
+                   class="btn-primary" target="_blank">
                     <i class="fas fa-download"></i> Download Resume
                 </a>
+                <a href="#about" class="btn-ghost">View work <i class="fas fa-arrow-down"></i></a>
             </div>
-
-            <div id="lead-down" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">
-                <i class="fas fa-chevron-down"></i>
+            <div class="hero-social">
+                <a href="https://github.com/Anooppandikashala" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anooppandikashala/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://anooptube.in/blog/" target="_blank" aria-label="Blog"><i class="fas fa-rss"></i></a>
+                <a href="https://www.youtube.com/anooptube" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/anoop_p_krishnan/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/anoop.pandikashala" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
             </div>
         </div>
-        
-        <!-- Social Media Icons -->
-        <div class="social-sidebar">
-            <a href="https://anooptube.in/blog/" target="_blank" class="social-link">
-                <i class="fas fa-rss"></i>
-            </a>
-            <a href="https://github.com/Anooppandikashala" target="_blank" class="social-link">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/anooppandikashala/" target="_blank" class="social-link">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.facebook.com/anoop.pandikashala" target="_blank" class="social-link">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/anoop_p_krishnan/" target="_blank" class="social-link">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/anooptube" target="_blank" class="social-link">
-                <i class="fab fa-youtube"></i>
-            </a>
-        </div>
-        
-        <!-- <div class="scroll-indicator">
-            <div class="scroll-text">Scroll Down</div>
-            <div class="scroll-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-        </div> -->
+        <a href="#about" class="scroll-hint" aria-label="Scroll to about"><i class="fas fa-chevron-down"></i></a>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About -->
+    <section id="about" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <div class="section-subtitle">Get to know me better</div>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="about-card">
-                        <div class="card-icon">
-                            <i class="fas fa-code"></i>
+            <p class="section-label">About</p>
+            <div class="about-layout">
+                <div class="about-intro">
+                    <h2 class="section-heading">Building software<br>that matters.</h2>
+                    <p class="about-bio">
+                        I'm a backend C++ developer with <strong id="exp_in_year_1"></strong> years of industry experience
+                        in the structural engineering domain, building cloud-based applications that automatically
+                        engineer and detail connections between structural elements. I also bring 4 years each of
+                        Android and Python development experience.
+                    </p>
+                    <div class="stat-row">
+                        <div class="stat">
+                            <span class="stat-num" id="exp_in_year_2"></span>
+                            <span class="stat-label">Years exp.</span>
                         </div>
-                        <div class="card-content">
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">6+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">8.57</span>
+                            <span class="stat-label">B-Tech CGPA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="acard reveal">
+                        <div class="acard-icon"><i class="fab fa-cuttlefish"></i></div>
+                        <div>
                             <h3>Backend Developer</h3>
-                            <p>I am a backend C++ developer with <span id="exp_in_year_1" class="highlight"></span> years of industry experience in the structural engineering field. I work on cloud-based applications that automatically engineer and detail connections between structural elements.</p>
+                            <p>Cloud-based structural engineering applications in C++ with STL, Linux, and MySQL.</p>
                         </div>
                     </div>
-                    
-                    <div class="about-card">
-                        <div class="card-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="card-content">
+                    <div class="acard reveal">
+                        <div class="acard-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div>
                             <h3>Mobile Developer</h3>
-                            <p>Additionally, I have 4 years of experience in Android development using Flutter framework, Java, Firebase, and Google Maps to build real-time applications.</p>
+                            <p>Android apps using Flutter, Java, Firebase, and Google Maps for real-time applications.</p>
                         </div>
                     </div>
-                    
-                    <div class="about-card">
-                        <div class="card-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <div class="card-content">
+                    <div class="acard reveal">
+                        <div class="acard-icon"><i class="fab fa-python"></i></div>
+                        <div>
                             <h3>Python Developer</h3>
-                            <p>I also have 4 years of hands-on experience in Python development for various applications and machine learning projects.</p>
+                            <p>Applications and machine learning projects including recommendation systems.</p>
                         </div>
                     </div>
-                </div>
-                
-                <div class="achievements">
-                    <div class="achievement-item">
-                        <div class="achievement-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h4>First Rank Holder</h4>
-                            <p>B-Tech Information Technology<br>2014-2018 Batch Calicut University</p>
+                    <div class="acard acard-accent reveal">
+                        <div class="acard-icon"><i class="fas fa-trophy"></i></div>
+                        <div>
+                            <h3>First Rank Holder</h3>
+                            <p>B-Tech Information Technology, 2014–2018 batch, University of Calicut.</p>
                         </div>
                     </div>
-                    
-                    <div class="achievement-item">
-                        <div class="achievement-icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h4>Published Research</h4>
-                            <p>"Bus Travel Guide Using GPS"<br>International Journal of Research in Electronics and Computer Engineering</p>
-                            <a href="https://drive.google.com/open?id=1lo13VDV_myCGIvHGwmmSx_Y1a_tSq3-g" 
-                               class="btn btn-outline" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                View Paper
-                            </a>
+                    <div class="acard acard-accent reveal">
+                        <div class="acard-icon"><i class="fas fa-file-alt"></i></div>
+                        <div>
+                            <h3>Published Research</h3>
+                            <p>"Bus Travel Guide Using GPS" — IJRECE.
+                                <a href="https://drive.google.com/open?id=1lo13VDV_myCGIvHGwmmSx_Y1a_tSq3-g" target="_blank">View paper →</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -155,295 +135,107 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="section-subtitle">Technologies I work with</div>
-            </div>
-            
+            <p class="section-label">Skills</p>
+            <h2 class="section-heading">Technical expertise</h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Backend & Systems</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-cuttlefish"></i>
-                            <span>C++</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-code"></i>
-                            <span>STL Libraries</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-linux"></i>
-                            <span>Linux</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MySQL</span>
-                        </div>
+                <div class="skill-group reveal">
+                    <p class="skill-group-label">Backend &amp; Systems</p>
+                    <div class="skill-tags">
+                        <span><i class="fab fa-cuttlefish"></i> C++</span>
+                        <span><i class="fas fa-code"></i> STL Libraries</span>
+                        <span><i class="fab fa-linux"></i> Linux</span>
+                        <span><i class="fas fa-database"></i> MySQL</span>
                     </div>
                 </div>
-                
-                <div class="skill-category">
-                    <h3>Web Technologies</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-php"></i>
-                            <span>PHP</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML/JS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS</span>
-                        </div>
+                <div class="skill-group reveal">
+                    <p class="skill-group-label">Web Technologies</p>
+                    <div class="skill-tags">
+                        <span><i class="fab fa-php"></i> PHP</span>
+                        <span><i class="fab fa-html5"></i> HTML / CSS</span>
+                        <span><i class="fab fa-js"></i> JavaScript</span>
                     </div>
                 </div>
-                
-                <div class="skill-category">
-                    <h3>Mobile & Languages</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Flutter</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-android"></i>
-                            <span>Android</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-java"></i>
-                            <span>Java</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-code"></i>
-                            <span>Dart</span>
-                        </div>
+                <div class="skill-group reveal">
+                    <p class="skill-group-label">Mobile &amp; Languages</p>
+                    <div class="skill-tags">
+                        <span><i class="fas fa-mobile-alt"></i> Flutter</span>
+                        <span><i class="fab fa-android"></i> Android</span>
+                        <span><i class="fab fa-java"></i> Java</span>
+                        <span><i class="fas fa-code"></i> Dart</span>
+                        <span><i class="fab fa-python"></i> Python</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal">
+                    <p class="skill-group-label">Tools &amp; Platforms</p>
+                    <div class="skill-tags">
+                        <span><i class="fas fa-fire"></i> Firebase</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Google Maps API</span>
+                        <span><i class="fab fa-git-alt"></i> Git</span>
+                        <span><i class="fab fa-python"></i> PyQt</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Projects -->
+    <section id="projects" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="section-subtitle">Some of my recent work</div>
-            </div>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/av.png" alt="AV-Invoice" />
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <i class="fas fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>AV-Invoice</h3>
-                        <p>Invoice Creation Website exclusively for Small Shops and Inventories. Built with PHP and MySQL for efficient business management.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Web App</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/blooddrop.jpg" alt="Blood Drop" />
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://play.google.com/store/apps/details?id=com.anoop.myprojects.bloodbank" 
-                                   class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Blood Drop Android App</h3>
-                        <p>College blood bank management application available on Play Store. Connects donors with recipients in emergency situations.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Android</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Java</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/todo.png" alt="ToDo App" />
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://play.google.com/store/apps/details?id=com.anoop.myprojects.todoapp" 
-                                   class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>ToDo Android Application</h3>
-                        <p>Productivity app for task management with local storage. Clean interface for organizing daily tasks and activities.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Android</span>
-                            <span class="tech-tag">SQLite</span>
-                            <span class="tech-tag">Java</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/gmate.jpg" alt="G Mate" />
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://play.google.com/store/apps/details?id=anoop.myprojects.gec_sfi" 
-                                   class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/Anooppandikashala/GEC_SFI" 
-                                   class="project-link" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>G Mate Android App</h3>
-                        <p>College community application for students. Features include announcements, events, and student interaction platform.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Android</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Real-time</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/mybus.jpg" alt="Bus Travel Guide" />
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://drive.google.com/open?id=1lo13VDV_myCGIvHGwmmSx_Y1a_tSq3-g" 
-                                   class="project-link" target="_blank">
-                                    <i class="fas fa-file-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Bus Travel Guide Using GPS</h3>
-                        <p>Public transportation system using mobile application with real-time GPS tracking. Main college project with published research paper.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Android</span>
-                            <span class="tech-tag">GPS</span>
-                            <span class="tech-tag">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/book.jpg" alt="Book Recommendation" />
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Anooppandikashala/Book_Recommendation_System" 
-                                   class="project-link" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Book Recommendation System</h3>
-                        <p>ML-based recommendation system using sentiment analysis and K-Means clustering for personalized book suggestions.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">ML</span>
-                            <span class="tech-tag">PyQt4</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p class="section-label">Work</p>
+            <h2 class="section-heading">Featured projects</h2>
+            <div class="projects-grid" id="projects-grid"></div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
+    <!-- Education -->
+    <section id="education" class="section section-alt">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Education</h2>
-                <div class="section-subtitle">My academic journey</div>
-            </div>
-            
-            <div class="education-timeline">
-                <div class="education-item">
-                    <div class="education-date">2014 - 2018</div>
-                    <div class="education-content">
-                        <div class="education-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="education-details">
-                            <h3>B-Tech Information Technology</h3>
-                            <h4>University of Calicut</h4>
-                            <div class="education-info">
-                                <p><strong>College:</strong> Govt. Engineering College Palakkad</p>
-                                <p><strong>CGPA:</strong> 8.57 out of 10</p>
-                                <div class="achievement-badge">First Rank Holder</div>
+            <p class="section-label">Education</p>
+            <h2 class="section-heading">Academic journey</h2>
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="tl-marker"><div class="tl-dot"></div></div>
+                    <div class="tl-body">
+                        <p class="tl-date">2014 – 2018</p>
+                        <div class="tl-card">
+                            <div class="tl-card-head">
+                                <h3>B-Tech Information Technology</h3>
+                                <span class="tl-badge">First Rank</span>
                             </div>
+                            <p class="tl-uni">University of Calicut</p>
+                            <p class="tl-meta">Govt. Engineering College Palakkad &nbsp;·&nbsp; CGPA: 8.57 / 10</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="education-item">
-                    <div class="education-date">2012 - 2014</div>
-                    <div class="education-content">
-                        <div class="education-icon">
-                            <i class="fas fa-school"></i>
-                        </div>
-                        <div class="education-details">
+
+                <div class="timeline-item reveal">
+                    <div class="tl-marker"><div class="tl-dot"></div></div>
+                    <div class="tl-body">
+                        <p class="tl-date">2012 – 2014</p>
+                        <div class="tl-card">
                             <h3>+2 Computer Science</h3>
-                            <h4>Sabary PTB Higher Secondary School</h4>
-                            <div class="education-info">
-                                <p><strong>Percentage:</strong> 91%</p>
-                            </div>
+                            <p class="tl-uni">Sabary PTB Higher Secondary School</p>
+                            <p class="tl-meta">Percentage: 91%</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="education-item">
-                    <div class="education-date">2011 - 2012</div>
-                    <div class="education-content">
-                        <div class="education-icon">
-                            <i class="fas fa-school"></i>
-                        </div>
-                        <div class="education-details">
+
+                <div class="timeline-item reveal">
+                    <div class="tl-marker"><div class="tl-dot"></div></div>
+                    <div class="tl-body">
+                        <p class="tl-date">2011 – 2012</p>
+                        <div class="tl-card">
                             <h3>SSLC</h3>
-                            <h4>Sabary PTB High School</h4>
-                            <div class="education-info">
-                                <p><strong>Percentage:</strong> Full A+ (95%)</p>
-                            </div>
+                            <p class="tl-uni">Sabary PTB High School</p>
+                            <p class="tl-meta">Full A+ &nbsp;·&nbsp; 95%</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -451,195 +243,197 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Anoop P</h3>
-                    <p>Associate Software Developer passionate about creating innovative solutions in backend development and mobile applications.</p>
+            <div class="footer-inner">
+                <p class="footer-copy">&copy; <span id="year"></span> Anoop P. All rights reserved.</p>
+                <nav class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                </nav>
+                <div class="footer-social">
+                    <a href="https://github.com/Anooppandikashala" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/anooppandikashala/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://anooptube.in/blog/" target="_blank" aria-label="Blog"><i class="fas fa-rss"></i></a>
+                    <a href="https://www.youtube.com/anooptube" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/anoop_p_krishnan/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/anoop.pandikashala" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#education">Education</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Connect With Me</h4>
-                    <div class="footer-social">
-                        <a href="https://anooptube.in/blog/" target="_blank">
-                            <i class="fas fa-rss"></i>
-                        </a>
-                        <a href="https://github.com/Anooppandikashala" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/anooppandikashala/" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.facebook.com/anoop.pandikashala" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/anoop_p_krishnan/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/anooptube" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Anoop P. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+    <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
 
     <script>
-        // Set current year
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-        
-        // Calculate experience
-        const startDate = new Date("2018-07-09");
-        const currentDate = new Date();
-        const experience = ((currentDate - startDate) / (1000 * 60 * 60 * 24 * 365)).toFixed(1);
-        document.getElementById("exp_in_year_1").innerHTML = experience;
-        
-        // Mobile menu toggle
-        const navToggle = document.getElementById('nav-toggle');
-        const navMenu = document.getElementById('nav-menu');
-        
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-                // Close mobile menu if open
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
-            });
-        });
-        
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 100) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
+        // ════════════════════════════════════════════════════════════════════
+        //  PROJECT DATA  — add / edit projects here
+        //  Each project accepts:
+        //    title       : string  (required)
+        //    image       : string  path to image (required)
+        //    description : string  (required)
+        //    tags        : string[]
+        //    links       : { url, label, icon }[]
+        //                  icon = Font Awesome class e.g. 'fab fa-github'
+        //                  common icons:
+        //                    GitHub     → 'fab fa-github'
+        //                    Play Store → 'fab fa-google-play'
+        //                    Live site  → 'fas fa-arrow-up-right-from-square'
+        //                    Paper/Doc  → 'fas fa-file-alt'
+        // ════════════════════════════════════════════════════════════════════
+        const projects = [
+            {
+                title: 'Invoiso',
+                image: 'images/invoiso.png',
+                description: 'Invoiso is a cross-platform desktop invoicing app built for freelancers and small businesses. Manage customers, products, and invoices seamlessly — entirely offline.',
+                tags: ['Flutter', 'SQLite', 'Desktop App'],
+                links: [
+                    { url: 'https://anooppandikashala.github.io/invoisoapp/index.html', label: 'View project', icon: 'fas fa-arrow-up-right-from-square' }
+                ]
+            },
+            {
+                title: 'AV-Invoice',
+                image: 'images/av.png',
+                description: 'Invoice creation website built exclusively for small shops and inventories. Efficient business management with PHP and MySQL.',
+                tags: ['PHP', 'MySQL', 'Web App'],
+                links: [
+                    { url: '#', label: 'View project', icon: 'fas fa-arrow-up-right-from-square' }
+                ]
+            },
+            {
+                title: 'Blood Drop',
+                image: 'images/blooddrop.jpg',
+                description: 'College blood bank management app on Play Store. Connects donors with recipients in emergency situations in real time.',
+                tags: ['Android', 'Firebase', 'Java'],
+                links: [
+                    { url: 'https://play.google.com/store/apps/details?id=com.anoop.myprojects.bloodbank', label: 'Play Store', icon: 'fab fa-google-play' }
+                ]
+            },
+            {
+                title: 'ToDo Android App',
+                image: 'images/todo.png',
+                description: 'Productivity app for task management with local storage. Clean interface for organizing daily tasks and activities.',
+                tags: ['Android', 'SQLite', 'Java'],
+                links: [
+                    { url: 'https://play.google.com/store/apps/details?id=com.anoop.myprojects.todoapp', label: 'Play Store', icon: 'fab fa-google-play' }
+                ]
+            },
+            /*{
+                title: 'G Mate',
+                image: 'images/gmate.jpg',
+                description: 'College community app for students — announcements, events, and student interaction platform built with Firebase.',
+                tags: ['Android', 'Firebase', 'Real-time'],
+                links: [
+                    { url: 'https://play.google.com/store/apps/details?id=anoop.myprojects.gec_sfi', label: 'Play Store', icon: 'fab fa-google-play' },
+                    { url: 'https://github.com/Anooppandikashala/GEC_SFI', label: 'GitHub', icon: 'fab fa-github' }
+                ]
+            },*/
+            {
+                title: 'Bus Travel Guide GPS',
+                image: 'images/mybus.jpg',
+                description: 'Public transport app with real-time GPS tracking. Main college project with a published research paper in IJRECE.',
+                tags: ['Android', 'GPS', 'MySQL'],
+                links: [
+                    { url: 'https://drive.google.com/open?id=1lo13VDV_myCGIvHGwmmSx_Y1a_tSq3-g', label: 'Research Paper', icon: 'fas fa-file-alt' }
+                ]
+            },
+            {
+                title: 'Book Recommender',
+                image: 'images/book.jpg',
+                description: 'ML-based recommendation system using sentiment analysis and K-Means clustering for personalized book suggestions.',
+                tags: ['Python', 'ML', 'PyQt4'],
+                links: [
+                    { url: 'https://github.com/Anooppandikashala/Book_Recommendation_System', label: 'GitHub', icon: 'fab fa-github' }
+                ]
             }
-        });
-        
-        // Active navigation highlighting
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.scrollY >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-        
-        // Back to top button
-        const backToTopBtn = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopBtn.classList.add('visible');
-            } else {
-                backToTopBtn.classList.remove('visible');
-            }
-        });
-        
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Animate elements on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate');
-                }
-            });
-        }, observerOptions);
-        
-        // Observe elements
-        document.querySelectorAll('.about-card, .skill-category, .project-card, .education-item').forEach(el => {
-            observer.observe(el);
-        });
-        
-        // Typing animation effect
-        const typingElement = document.querySelector('.typing-animation');
+        ];
+
+        // ── Render Projects ───────────────────────────────────────────────
+        (function renderProjects() {
+            const grid = document.getElementById('projects-grid');
+            grid.innerHTML = projects.map(p => `
+                <article class="project-card reveal">
+                    <div class="project-img">
+                        <img src="${p.image}" alt="${p.title}" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <h3>${p.title}</h3>
+                            <div class="project-links">
+                                ${p.links.map(l => `
+                                <a href="${l.url}" ${l.url !== '#' ? 'target="_blank"' : ''} aria-label="${l.label}">
+                                    <i class="${l.icon}"></i>
+                                </a>`).join('')}
+                            </div>
+                        </div>
+                        <p>${p.description}</p>
+                        <div class="project-tags">
+                            ${p.tags.map(t => `<span>${t}</span>`).join('')}
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+        })();
+
+        // ── Year & Experience ──────────────────────────────────────────────
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const startDate = new Date('2018-07-09');
+        const yrs = ((Date.now() - startDate) / (1000 * 60 * 60 * 24 * 365)).toFixed(1);
+        document.querySelectorAll('#exp_in_year_1, #exp_in_year_2').forEach(el => el.textContent = yrs);
+
+        // ── Typing Animation ──────────────────────────────────────────────
         const roles = ['Backend C++ Developer', 'Android Developer', 'Python Developer'];
-        let roleIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        
-        function typeRole() {
-            const currentRole = roles[roleIndex];
-            
-            if (isDeleting) {
-                typingElement.textContent = currentRole.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                typingElement.textContent = currentRole.substring(0, charIndex + 1);
-                charIndex++;
-            }
-            
-            if (!isDeleting && charIndex === currentRole.length) {
-                setTimeout(() => isDeleting = true, 2000);
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                roleIndex = (roleIndex + 1) % roles.length;
-            }
-            
-            const speed = isDeleting ? 50 : 100;
-            setTimeout(typeRole, speed);
+        let ri = 0, ci = 0, deleting = false;
+        const typingEl = document.getElementById('typing-text');
+
+        function type() {
+            const role = roles[ri];
+            typingEl.textContent = deleting ? role.slice(0, ci - 1) : role.slice(0, ci + 1);
+            deleting ? ci-- : ci++;
+            if (!deleting && ci === role.length) { setTimeout(() => deleting = true, 2000); }
+            else if (deleting && ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
+            setTimeout(type, deleting ? 50 : 100);
         }
-        
-        // Start typing animation after page load
-        setTimeout(typeRole, 1000);
+        setTimeout(type, 800);
+
+        // ── Mobile Menu ───────────────────────────────────────────────────
+        const toggle = document.getElementById('nav-toggle');
+        const menu   = document.getElementById('nav-menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('open');
+            toggle.classList.toggle('open');
+        });
+        document.querySelectorAll('.nav-link, .nav-resume').forEach(link => {
+            link.addEventListener('click', () => { menu.classList.remove('open'); toggle.classList.remove('open'); });
+        });
+
+        // ── Navbar scroll ─────────────────────────────────────────────────
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        // ── Active nav link ───────────────────────────────────────────────
+        const sections  = document.querySelectorAll('section[id]');
+        const navLinks  = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+            let cur = '';
+            sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
+            navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + cur));
+        }, { passive: true });
+
+        // ── Back to Top ───────────────────────────────────────────────────
+        const btt = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => btt.classList.toggle('show', window.scrollY > 400), { passive: true });
+        btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // ── Scroll Reveal ─────────────────────────────────────────────────
+        // Runs after renderProjects(), so all .reveal elements are in the DOM
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     </script>
+
 </body>
 </html>
